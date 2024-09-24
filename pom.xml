@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>springbootElasticSearch</artifactId>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <excludes>
+            <exclude>
+              <artifactId>lombok</artifactId>
+              <groupId>org.projectlombok</groupId>
+            </exclude>
+          </excludes>
+        </configuration>
+        <groupId>org.springframework.boot</groupId>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+
+    <dependency>
+      <artifactId>postgresql</artifactId>
+      <groupId>org.postgresql</groupId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <artifactId>lombok</artifactId>
+      <groupId>org.projectlombok</groupId>
+      <optional>true</optional>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+    <dependency>
+      <artifactId>javafaker</artifactId>
+      <groupId>com.github.javafaker</groupId>
+      <version>1.0.2</version>
+    </dependency>
+    <dependency>
+      <artifactId>elasticsearch-java</artifactId>
+      <groupId>co.elastic.clients</groupId>
+      <version>8.14.1</version> <!-- Replace with the latest version -->
+    </dependency>
+    <dependency>
+      <artifactId>httpclient</artifactId>
+      <groupId>org.apache.httpcomponents</groupId>
+      <version>4.5.14</version> <!-- Ensure you have Apache HttpClient -->
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <description>Demo project for Spring Boot</description>
+  <developers>
+    <developer/>
+  </developers>
+  <groupId>com.elastic</groupId>
+  <licenses>
+    <license/>
+  </licenses>
+  <modelVersion>4.0.0</modelVersion>
+  <name>springbootElasticSearch</name>
+  <parent>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <groupId>org.springframework.boot</groupId>
+    <relativePath/>
+    <version>3.3.4</version> <!-- lookup parent from repository -->
+  </parent>
+  <properties>
+    <java.version>23</java.version>
+  </properties>
+  <scm>
+    <connection/>
+    <developerConnection/>
+    <tag/>
+    <url/>
+  </scm>
+  <url/>
+
+  <version>0.0.1-SNAPSHOT</version>
+
+</project>
